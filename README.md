@@ -1,8 +1,9 @@
-### A wine market analysis project to consolidate SQL
+### A wine market analysis project
 
 - Duration of the project: `5 days`
 - When: `March 2026` 
-- Where: `Becode` 
+- Where: `Becode`
+- Learning challenge: `consolidate SQL`
 
 #### This report presents the findings of an analysis of the Vivino db.
 
@@ -10,9 +11,9 @@
 
 ![Vivino db diagram](./dashboard/vivino_db.png)
 
-### The mission
+### Mission
 1. Highlight 10 wines to increase sales
-2. Marketing budget allocation: 5 markets in expansion to focus on with high engagement index
+2. Marketing budget allocation: 5 markets in expansion to promote - with high engagement index
 3. Give 3 different awards to the best wineries: best winery rated by consumers, winery with best wine rating, winery with best value for money wine
 4. Get 5 best-rated wines for 3 most common used grapes
 5. Get leaderboard of 10 countries with best average wine rating
@@ -37,8 +38,9 @@
 | Tordiz 40 Year Old Tawny Port | Portugal | 4.6 | 337.50 |
 | L'Extravagant de Doisy-Daëne Sauternes | France | 4.6 | 320.60 |
 
+&nbsp;
 
-**2. Marketing budget allocation: 5 markets in expansion to focus on with high engagement index**
+**2. Marketing budget allocation: 5 markets in expansion to promote - with high engagement index**
 <p>Find 5 markets in expansion to focus on for marketing. I excluded USA as it is already a large market with many active users.</p>
 <p>The engagement index reflects the overall activity and interaction of users within each country's wine community.</p>
 
@@ -50,5 +52,95 @@
 | Israel | 150,549 | 5,435 | 529 | 27.70 |
 | Spain | 2,264,396 | 102,662 | 18,026 | 22.05
 
-**3. Give 3 different awards to the best wineries: best winery rated by consumers, winery with best wine rating, winery with best value for money wine**
+&nbsp;
 
+**3. Give 3 different awards to the best wineries:**
+- Best winery rated by consumers: 🏆 Siepi rating 4.3 and 4981 users rating
+- Winery with best wine rating: 🏆 Tenuta Tignanello - wine "Solaia" rating 4.5
+- Winery with best value for money wine: 🏆 Tignanello - wine "Colheita Porto" rating 4.4 and price 39.90
+
+&nbsp;
+
+**4. Get 5 best-rated wines for the 3 most common used grapes**
+- The 3 most common used grapes: Cabernet Sauvignon, Merlot, Chardonnay
+
+| Grape Name | Wine Name | Avg Rating | Rating Count |
+|---|---|---|---|
+| Cabernet Sauvignon | Cabernet Sauvignon | 4.8 | 2,941 |
+| Cabernet Sauvignon | Mágico | 4.8 | 146 |
+| Cabernet Sauvignon | IX Estate Red | 4.7 | 2,810 |
+| Cabernet Sauvignon | Special Selection Cabernet Sauvignon | 4.7 | 41,236 |
+| Cabernet Sauvignon | Unico Reserva Especial Edición | 4.7 | 13,025 |
+| Chardonnay | Amarone della Valpolicella Classico Riserva | 4.8 | 587 |
+| Chardonnay | Cabernet Sauvignon | 4.8 | 2,941 |
+| Chardonnay | Fratini Bolgheri Superiore | 4.8 | 153 |
+| Chardonnay | Cristal Rosé Vinothèque | 4.8 | 88 |
+| Chardonnay | Batard-Montrachet Grand Cru | 4.8 | 34 |
+| Merlot | Amarone della Valpolicella Classico Riserva | 4.8 | 587 |
+| Merlot | Fratini Bolgheri Superiore | 4.8 | 153 |
+| Merlot | Cristal Rosé Vinothèque | 4.8 | 88 |
+| Merlot | Batard-Montrachet Grand Cru | 4.8 | 34 |
+| Merlot | Eszencia | 4.7 | 488 |
+
+&nbsp;
+
+**5. Get leaderboard of 10 countries with best average wine rating**
+
+| Country | Avg Rating | Total Wines |
+|---|---|---|
+| Germany | 4.50 | 14 |
+| USA | 4.49 | 74 |
+| Moldavia | 4.48 | 5 |
+| Hungary | 4.47 | 11 |
+| South Africa | 4.46 | 22 |
+| Australia | 4.46 | 12 |
+| France | 4.45 | 331 |
+| Spain | 4.44 | 94 |
+| Portugal | 4.44 | 28 |
+| Chili | 4.43 | 16 |
+
+&nbsp;
+
+**6. Get leaderboard of 5 countries with best average vintages rating**
+
+| Country | Avg Rating | Avg Price | Nb of Vintages |
+|---|---|---|---|
+| Argentina | 4.32 | 111.38 | 28 |
+| Chili | 4.12 | 129.71 | 25 |
+| Portugal | 3.93 | 161.95 | 31 |
+| Moldavia | 3.87 | 42.64 | 7 |
+| USA | 3.70 | 300.37 | 112 |
+
+&nbsp;
+
+**7. Promote 10 wines best-value for money ratings_average > 4.5 AND price < 50**
+
+| Wine Name | Region | Country | Avg Rating | Rating Count | Avg Price |
+|---|---|---|---|---|---|
+| 60 Sessantanni Old Vines Primitivo di Manduria | Primitivo di Manduria | Italie | 4.50 | 94,289 | 24.75 |
+| Vinhas Velhas Tinto | Alentejo | Portugal | 4.50 | 736 | 29.95 |
+| Cosimo Varvaglione Collezione Privata Primitivo di Manduria | Primitivo di Manduria | Italie | 4.50 | 5,016 | 31.45 |
+| Ice Wine de Purcari | South Eastern | Moldavie | 4.50 | 722 | 33.17 |
+| Negru de Purcari Limited Edition | South Eastern | Moldavie | 4.50 | 970 | 33.17 |
+| Limited Edition 10 Vendemmie | Montepulciano d'Abruzzo | Italie | 4.50 | 9,453 | 34.20 |
+| Kalós Cru Gran Reserva Malbec | Mendoza | Argentine | 4.50 | 3,351 | 34.85 |
+| Terrasse à l'Ombre Côtes du Rhône | Côtes-du-Rhône | France | 4.50 | 819 | 34.95 |
+| Lupi Rezerva | Moldova | Moldavie | 4.50 | 7,604 | 36.55 |
+| Yarden Katzrin | Galilee | Israël | 4.50 | 894 | 37.05 |
+
+&nbsp;
+
+**8. Find wines matching primary taste with a combination of these 5 keywords: coffee, citrus, cream, green apple, toast**
+
+| Wine Name | User Structure Count |
+|---|---|
+| Brut Champagne | 13,491 |
+| Tignanello | 8,219 |
+| Grande Cuvée | 5,360 |
+| Cristal Brut Champagne (Millésimé) | 5,101 |
+| Tinto | 5,059 |
+| Valbuena 5º | 4,638 |
+| Ribera del Duero | 4,511 |
+| Comtes de Champagne Blanc de Blancs | 3,656 |
+| La Grande Année Brut Champagne | 3,595 |
+| Brut Cuvée Champagne Rosé | 3,451 |
