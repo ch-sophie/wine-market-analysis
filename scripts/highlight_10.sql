@@ -1,7 +1,7 @@
 -- Highlight 10 wines to increase sales
 -- Join vintages and wines for price and year
 -- Select high rating average (> 4.5) and high rating count (> 1000)
-
+/*
 SELECT 
     w.name AS wine_name,
     v.name AS vintage_name,
@@ -14,9 +14,10 @@ JOIN vintages v ON w.id = v.wine_id
 WHERE w.ratings_count > 1000  -- Ensuring social proof
 ORDER BY w.ratings_count DESC
 LIMIT 10;
-
+*/
 -------------------------------------------
 -- Get top 10 wines and group by so it's different wines - not the same wine 2015, 2016, 2017
+-- Promote wines with ratings_count < 1000 AND ratings_average > 4.5 and having price < 500
 SELECT
     w.name,
     c.name AS country,
@@ -32,7 +33,8 @@ JOIN regions r ON w.region_id = r.id
 JOIN countries c ON r.country_code = c.code
 LEFT JOIN vintages v ON v.wine_id = w.id
 AND v.price_euros IS NOT NULL
-WHERE w.ratings_count > 1000
+WHERE w.ratings_count < 1000 AND w.ratings_average > 4.5
 GROUP BY w.id, w.name, w.ratings_average, w.ratings_count, c.name
+HAVING AVG(v.price_euros) < 500 
 ORDER BY score DESC
 LIMIT 10;

@@ -1,6 +1,6 @@
--- Give awards to 3 best wineries
+-- Give 3 awards to the 3 best wineries
 
--- 1 get best winery for consumers
+-- 1 get best winery for consumers by ratings_count
 SELECT 
     w.winery_id, 
     wn.name AS winery_name,
