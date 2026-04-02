@@ -14,7 +14,7 @@ LIMIT 1 -- top1 wn Siepi
 
 -- 2 get winery with best wine rating
 SELECT 
-    wn.name AS winery_name 
+    wn.name AS winery_name,
     ROUND(AVG(w.ratings_average), 2) AS global_rating,
     SUM(w.ratings_count) AS total_reviews,
     COUNT(w.id) AS number_of_wines
@@ -32,10 +32,9 @@ SELECT
     w.ratings_average AS rating,
     v.price_euros AS price,
     ROUND((w.ratings_average / v.price_euros) * 10, 2) AS value_index
-FROM wineries wn 
+FROM wineries wn
 JOIN wines w ON wn.id = w.winery_id
-JOIN vintages v ON w.id = v.wine_id 
-WHERE v.price_euros IS NOT NULL
+JOIN vintages v ON w.id = v.wine_id
     AND w.ratings_count > 500
     AND v.price_euros < 50
 ORDER BY value_index DESC
